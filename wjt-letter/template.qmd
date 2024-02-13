@@ -1,0 +1,64 @@
+---
+subject: "Consultation Report Title"
+shorttitle: "Short Title"
+reporttype: "Report Type"
+name: |
+  W. Jake Thompson, Ph.D.
+logo: "consulting-logo.png"
+sender: |
+  12261 S Crest Drive Olathe, KS 66061 \
+  wjakethompson@gmail.com \
+  (785) 643-9244
+recipient: |
+  Mr. John Doe \
+  Acme Corp. \
+  123 Glennwood Ave \
+  Quarto Creek, VA 22438 \
+sent: "September 4, 2016"
+format:
+  wjt-letter-typst: default
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+needed_packages <- c("tidyverse", "wjake", "here", "fs", "glue", "pluralize",
+                     "english", "knitr", "gt")
+load_packages <- function(x) {
+  suppressPackageStartupMessages(require(x, character.only = TRUE))
+}
+vapply(needed_packages, load_packages, logical(1))
+
+set_theme(plot_margin = margin(0, 10, 0, 10))
+```
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempus lorem quam, nec eleifend risus rhoncus sed. Fusce urna quam, placerat eu nisi eget, consequat tempor mauris. Nullam maximus est sit amet blandit venenatis. Curabitur vestibulum, nulla eget bibendum blandit, est nisi convallis massa, vel tincidunt orci mi dictum magna. Duis rhoncus neque vitae ipsum imperdiet pulvinar. 
+
+Vestibulum pretium, ligula ac dignissim elementum, ante justo elementum ante, ac tincidunt mi nisi dignissim turpis. Vestibulum pellentesque metus at metus molestie dignissim. In eget nisi efficitur, posuere ligula non, tincidunt augue. Ut bibendum justo massa, non venenatis elit ullamcorper non. Duis diam libero, hendrerit luctus eros vitae, feugiat gravida libero. Ut posuere viverra ex, sed lacinia lorem laoreet id. 
+
+In hac habitasse platea dictumst. Cras ut felis et metus feugiat cursus. Etiam sit amet ultrices odio. Phasellus hendrerit dui non dolor semper, quis pretium magna egestas.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempus lorem quam, nec eleifend risus rhoncus sed. Fusce urna quam, placerat eu nisi eget, consequat tempor mauris. Nullam maximus est sit amet blandit venenatis. Curabitur vestibulum, nulla eget bibendum blandit, est nisi convallis massa, vel tincidunt orci mi dictum magna. Duis rhoncus neque vitae ipsum imperdiet pulvinar. 
+
+Vestibulum pretium, ligula ac dignissim elementum, ante justo elementum ante, ac tincidunt mi nisi dignissim turpis. Vestibulum pellentesque metus at metus molestie dignissim. In eget nisi efficitur, posuere ligula non, tincidunt augue. Ut bibendum justo massa, non venenatis elit ullamcorper non. Duis diam libero, hendrerit luctus eros vitae, feugiat gravida libero. Ut posuere viverra ex, sed lacinia lorem laoreet id. 
+
+In hac habitasse platea dictumst. Cras ut felis et metus feugiat cursus. Etiam sit amet ultrices odio. Phasellus hendrerit dui non dolor semper, quis pretium magna egestas.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempus lorem quam, nec eleifend risus rhoncus sed. Fusce urna quam, placerat eu nisi eget, consequat tempor mauris. Nullam maximus est sit amet blandit venenatis. Curabitur vestibulum, nulla eget bibendum blandit, est nisi convallis massa, vel tincidunt orci mi dictum magna. Duis rhoncus neque vitae ipsum imperdiet pulvinar. 
+
+Vestibulum pretium, ligula ac dignissim elementum, ante justo elementum ante, ac tincidunt mi nisi dignissim turpis. Vestibulum pellentesque metus at metus molestie dignissim. In eget nisi efficitur, posuere ligula non, tincidunt augue. Ut bibendum justo massa, non venenatis elit ullamcorper non. Duis diam libero, hendrerit luctus eros vitae, feugiat gravida libero. Ut posuere viverra ex, sed lacinia lorem laoreet id. 
+
+In hac habitasse platea dictumst. Cras ut felis et metus feugiat cursus. Etiam sit amet ultrices odio. Phasellus hendrerit dui non dolor semper, quis pretium magna egestas.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempus lorem quam, nec eleifend risus rhoncus sed. Fusce urna quam, placerat eu nisi eget, consequat tempor mauris. Nullam maximus est sit amet blandit venenatis. Curabitur vestibulum, nulla eget bibendum blandit, est nisi convallis massa, vel tincidunt orci mi dictum magna. Duis rhoncus neque vitae ipsum imperdiet pulvinar. 
+
+Vestibulum pretium, ligula ac dignissim elementum, ante justo elementum ante, ac tincidunt mi nisi dignissim turpis. Vestibulum pellentesque metus at metus molestie dignissim. In eget nisi efficitur, posuere ligula non, tincidunt augue. Ut bibendum justo massa, non venenatis elit ullamcorper non. Duis diam libero, hendrerit luctus eros vitae, feugiat gravida libero. Ut posuere viverra ex, sed lacinia lorem laoreet id. 
+
+In hac habitasse platea dictumst. Cras ut felis et metus feugiat cursus. Etiam sit amet ultrices odio. Phasellus hendrerit dui non dolor semper, quis pretium magna egestas.
+
+Best,
+
+
+
