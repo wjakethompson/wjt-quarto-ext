@@ -14,7 +14,7 @@ This will install the format extension and create an example qmd file that you c
 
 ## Using
 
-The example qmd demonstrates the document options supported by the ku-letter format (, etc.).
+The example qmd demonstrates the document options supported by the ku-letter format (subject, recipient, logos, etc.).
 For example, your document options might look something like this:
 
 ```yaml
