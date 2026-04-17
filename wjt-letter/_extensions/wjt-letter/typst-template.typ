@@ -2,7 +2,7 @@
 // and formats it as a simple letter.
 #let letter(
   // The logo for the header
-  logo: none,
+  header-logo: none,
 
   // The letter's sender, which is display at the top of the page.
   sender: none,
@@ -33,43 +33,27 @@
   set page(
     paper: "us-letter",
     margin: 1in,
-    header-ascent: 10%,
-    footer: [
-      #set align(right)
-      #counter(page).display(
+    header-ascent: 10%
+  )
+
+  set page(footer: context [
+    #set align(right)
+    #counter(page).display(
         "1 / 1",
         both: true
       )
-    ]
-  )
+  ])
   
-  set page(header: locate(loc => {
-    if counter(page).at(loc).first() <= 1 [
-      #style(styles => {
-      if logo == none {
-        return
-      }
-
-      let img = image(logo, width: 2in)
-      let img-size = measure(img, styles)
-
-      grid(
-        columns: (1fr, img-size.width),
+  set page(header: context {
+    if counter(page).get().first() <= 1 [
+      #grid(
+        columns: (1fr, 2in),
         rows: 1,
         none,
-        img
+        image(header-logo)
       )
-      })
     ] else [
-      #style(styles => {
-      if logo == none {
-        return
-      }
-
-      let img = image(logo, width: 1.5in)
-      let img-size = measure(img, styles)
-      
-      let header-text = text(
+      #let headertext = text(
         [
           #if shorttitle == none {none} else {shorttitle}
           #if shorttitle != none [ \ ]
@@ -77,17 +61,19 @@
         ]
       )
 
-      grid(
+      #let img = image(header-logo, width: 1.5in)
+      #let img-size = measure(img)
+      
+      #grid(
         columns: (img-size.width, 1fr),
         rows: (img-size.height, 10pt),
-        img,
-        text(pad(top: 5pt, align(top + right, header-text))),
+        image(header-logo),
+        align(right, headertext),
         none,
         none
       )
-      })
     ]
-  }))
+  })
   
 
   // Display sender at top of page. If there's no sender

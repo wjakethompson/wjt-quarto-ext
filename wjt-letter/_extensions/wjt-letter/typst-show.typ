@@ -2,8 +2,8 @@
 $if(sender)$
   sender: [$sender$],
 $endif$
-$if(logo)$
-  logo: "$logo$",
+$if(header-logo)$
+  header-logo: "$header-logo$",
 $endif$
 $if(recipient)$
   recipient: [$recipient$],

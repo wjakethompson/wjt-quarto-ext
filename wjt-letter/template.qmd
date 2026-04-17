@@ -4,7 +4,7 @@ shorttitle: "Short Title"
 reporttype: "Report Type"
 name: |
   W. Jake Thompson, Ph.D.
-logo: "consulting-logo.png"
+header-logo: "consulting-logo.png"
 sender: |
   12261 S Crest Drive Olathe, KS 66061 \
   [wjakethompson@gmail.com](mailto:wjakethompson@gmail.com) \
@@ -22,9 +22,17 @@ format:
 ```{r}
 #| label: setup
 #| include: false
-
-needed_packages <- c("tidyverse", "wjake", "here", "fs", "glue", "pluralize",
-                     "english", "knitr", "gt")
+needed_packages <- c(
+  "tidyverse",
+  "wjake",
+  "here",
+  "fs",
+  "glue",
+  "pluralize",
+  "english",
+  "knitr",
+  "gt"
+)
 load_packages <- function(x) {
   suppressPackageStartupMessages(require(x, character.only = TRUE))
 }

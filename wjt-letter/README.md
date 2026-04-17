@@ -24,7 +24,7 @@ shorttitle: "Short Title"
 reporttype: "Report Type"
 name: |
   W. Jake Thompson, Ph.D.
-logo: "consulting-logo.png"
+header-logo: "consulting-logo.png"
 sender: |
   12261 S Crest Drive Olathe, KS 66061 \
   wjakethompson@gmail.com \
@@ -43,4 +43,3 @@ format:
 WJT letter documents are rendered as follows:
 
 ![](wjt-letter.png)
-
