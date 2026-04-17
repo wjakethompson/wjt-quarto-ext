@@ -2,8 +2,6 @@
 
 Based on the KU letterhead format for Accessible Teaching, Learning, and Assessment Systems.
 
-**NOTE**: This format requires the pre-release version of Quarto v1.4, which you can download here: <https://quarto.org/docs/download/prerelease>.
-
 ## Installing
 
 ```bash
@@ -43,4 +41,3 @@ format:
 KU letter documents are rendered as follows:
 
 ![](ku-letter.png)
-
